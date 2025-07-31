@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cyberdudebivash's CyberChef</title>
+    <style>
+        body { font-family: Arial; margin: 20px; background: #111; color: #0f0; }
+        textarea { width: 100%; height: 150px; margin-top: 10px; background: #000; color: #0f0; }
+        select, button { margin: 10px 5px; padding: 5px; }
+    </style>
+</head>
+<body>
+    <h1>Cyberdudebivash's CyberChef (Lite Version)</h1>
+    <textarea id="input" placeholder="Enter your data here..."></textarea>
+    <br>
+    <select id="operation">
+        <option value="base64encode">Base64 Encode</option>
+        <option value="base64decode">Base64 Decode</option>
+        <option value="urlencode">URL Encode</option>
+        <option value="urldecode">URL Decode</option>
+        <option value="md5">MD5 Hash</option>
+        <option value="sha256">SHA-256 Hash</option>
+    </select>
+    <button onclick="runOperation()">Run</button>
+    <textarea id="output" placeholder="Result will appear here..."></textarea>
+    <script src="../js/encoder.js"></script>
+</body>
+</html>
